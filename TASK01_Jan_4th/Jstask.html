@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task on 4th-Jan-2021</title>
+    <script>
+        //Question 1
+        document.write("<h3> Check even numbers between 1 to 100 </h3>")
+        for (var i=0;i<=100;i++){
+            if((i%2)==0)
+            document.writeln(i);
+        }
+    
+        //Question 2
+        document.write("<h3> Check whether given number is palindrome or not </h3>")
+        var n = prompt("Enter a number to check whether it is a palindrome or not");
+        var sum=0, r;
+        var temp = n;
+        while(n>0){
+            r=n%10;
+            sum = (sum*10)+r;
+            n=n/10;
+        }
+        if(temp=sum){
+            document.write("Given num is palindrome")
+        }
+        else{
+            document.write("Given num is not palindrome")
+        }
+
+        //Question 3
+        document.write("<h3> Check whether given number is even or odd </h3>")
+        var num = prompt("Enter a number to check even or Odd");
+        if (num%2==0){
+            document.write("Given number is even")
+        }
+        else{
+            document.write("Given number is odd")
+        }
+
+        //Question 4
+        /*document.write("<h3> Using for Loop pyramid</h3>")
+        var rows=5;
+        for(var i=0;i<=rows;i++){
+            for(k=0;k<=(rows-i);k++){
+                document.write("&nbsp")
+            }
+            for(j=0;j<=i;j++){
+                document.write("$")
+            }
+            document.write("<br>")
+        } */
+
+        document.write("<h3> Using for Loop rightangle pyramid</h3>")
+        for(var i=0;i<=5;i++){
+            for(j=0;j<=i;j++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+
+        // //Question 5
+        // document.write("<h3> Print the fibinacci number between 1 to 100 </h3>")
+        var n=100,l=0,t1=0,t2=1,sum;
+        document.write('<h3>Upto 100 : </h3>');
+        while(t1<=n)
+        {
+            document.write("<h4>"+t1+"</h4>"+"     ");
+             sum=t1+t2;
+             t1=t2;
+             t2=sum;
+           
+            
+        }
+        
+        //Question 6 
+        document.write("<h3> check whether the given string is prsented in array or not</h3>")
+        var array=['apple','banana','mango','pineapple'];
+        document.write('length  :'+array.length +"<br>");
+        var fruit=prompt('Enter the array value you search');
+        document.write("<h3>"+fruit+"</h3>")
+        // document.write('Array elements are  :'+array[i] +"<br>");
+       for( var i=0;i<array.length;i++)
+       {
+        
+           if(fruit==array[i])
+           {
+               document.write('Your search is found');
+            if(fruit!=array[i])
+             {
+               document.write('Your search is not found');
+             }
+           }
+           
+          }
+            
+
+        //Question 7
+        document.write("<h3> Write a program to check whether the given year is leap year or not </h3>");
+            var i = prompt("Enter a number to whether it is a year or not");
+            if(i%4==0){
+                document.write("Given year is leap year");
+            }
+            else{
+                document.write("Given year is not leap year");
+            }
+
+
+        //Question 8
+        document.write("<h3> Write a program to convert celsious to farenhit</h3>");
+            var celsious = prompt("Enter a number to convert celsious to fahrenheit");
+            var fahrenheit ;
+            fahrenheit = celsious/1.8+32;
+            document.write(fahrenheit);
+
+
+        //Question 9
+        document.write("<h3>To check the number are true are there sum </h3><br>");
+            // var num1=prompt("Enter number1");
+             var num1=25;
+             document.write('Number one is   ::'+num1 +'<br>');
+             //var num2=prompt('Enter number2');
+             var num2=50;
+             document.write('Number two is   ::'+num2+'<br>');
+             
+             sum=(num1)+(num2);
+             var sum1=(num1)&&(num2);
+             document.write('sum of two number is   ::'+sum +'<br>' );
+             document.write('Any one of the number is  ::'+sum1+'<br>');
+             if(sum&&sum1==50)
+             {
+                 document.write('statement satisfied');
+             }
+             else{
+                document.write('statement un satisfied');
+             }
+
+             
+        //Question 10
+        document.write("<h3>Check whether the given lies in between 20 to 100 or not </h3>")
+        var num = prompt("Enter a number whether it lies between 20 to 100 or not");
+        if(num>20 && num<100){
+            document.write("The number lies between 20 to 100")
+        }
+        else{
+            document.write("The number doesn't lies between 20 and 100")
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
